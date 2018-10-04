@@ -29,46 +29,100 @@
       </div>
     </header>
 
-    <div class="catalog">
-      <h2 class="catalog__title">Каталог товаров</h2>
+    <div class="order-knitting">
+      <h2 class="order-knittingg__title">Вязание на заказ</h2>
+      <p class="order-knitting__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
     </div>
 
-    <section class="catalog-item">
-      <ul class="catalog-item__list">
-        <li class="catalog-item__prodact prodact">
-          <img src="" class="prodact__image">
-          <h3 class="prodact__title">Зайчик-попрыгайчик</h3>
-          <p class="prodact__characteristic">Рост 30 см вес 200 г</p>
-          <p class="prodact__price"> 1 200 руб.</p>
-        </li>
-        <li class="catalog-item__prodact prodact">
-          <img src="" class="prodact__image">
-          <h3 class="prodact__title">Корзинка для белья</h3>
-          <p class="prodact__characteristic">Диаметр 15 см высота 10 см</p>
-          <p class="prodact__price"> 690 руб.</p>
-        </li>
-        <li class="catalog-item__prodact prodact">
-          <img src="" class="prodact__image">
-          <h3 class="prodact__title">Большая корзинка для игрушек</h3>
-          <p class="prodact__characteristic">Диаметр 30 см высота 30 см</p>
-          <p class="prodact__price"> 1 500 руб.</p>
-        </li>
-      </ul>
+    <section class="form">
+      <form action="https://echo.htmlacademy.ru" method="get">
+
+        <div class="form__type filter">
+          <h2 class="filter__title">Тип</h2>
+          <ul class="filter__list type">
+            <li class="type__item">
+              <input class="visually-hidden type__input type__input--radio" type="radio" name="accessories" id="accessories-id" checked>
+              <label for="accessories-id">Аксессуар для интерьера</label>
+            </li>
+            <li class="type__item">
+              <input class="visually-hidden type__input type__input--radio" type="radio" name="toy" id="toy-id">
+              <label for="toy-id">Детская игрушка</label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="form__type filter">
+          <h2 class="filter__title">Цвет</h2>
+          <ul class="filter__list color">
+            <li class="color__item">
+              <input class="visually-hidden color-input color-input-checkbox" type="checkbox" name="white" id="white-id" checked>
+              <label for="white-id">Белый</label>
+            </li>
+            <li class="color__item">
+              <input class="visually-hidden color-input color-input-checkbox" type="checkbox" name="grey" id="grey-id" checked>
+              <label for="grey-id">Серый</label>
+            </li>
+            <li class="color__item">
+              <input class="visually-hidden color-input color-input-checkbox" type="checkbox" name="tiffany" id="tiffany-id">
+              <label for="tiffany-id">"Тиффани"</label>
+            </li>
+            <li class="color__item">
+              <input class="visually-hidden color-input color-input-checkbox" type="checkbox" name="black" id="black-id">
+              <label for="black-id">Черный</label>
+            </li>
+            <li class="color__item">
+              <input class="visually-hidden color-input color-input-checkbox" type="checkbox" name="pink" id="pink-id">
+              <label for="pink-id">Розовый</label>
+            </li>
+            <li class="color__item">
+              <input class="visually-hidden color-input color-input-checkbox" type="checkbox" name="orange" id="orange-id">
+              <label for="orange-id">Оранжевый</label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="form__type filter">
+          <h2 class="filter__title">ФИО</h2>
+          <div class="filter__list full-name">
+            <div class="full-name__block">
+              <label for="name-id" class="full-name__title">Имя:</label>
+              <input class="full-name__name" type="text" name="name" id="name-id" required placeholder="Введите ваше имя*">
+            </div>
+            <div class="full-name__block">
+              <label for="surname-id" class="full-name__title">Фамилия:</label>
+              <input class="full-name__name" type="text" name="surname" id="surname-id" required placeholder="Укажите фамилию*">
+            </div>
+            <div class="full-name__block">
+              <label for="patronymic-id" class="full-name__title">Отчество:</label>
+              <input class="full-name__name" type="text" name="patronymic" id="patronymic-id" placeholder="Отчество, если желаете">
+            </div>
+          </div>
+
+          <div class="form__type filter">
+            <div class="filter__list phone">
+              <label for="phone-id" class="filter__title">Тел</label>
+              <input class="phone__namber" type="tel" name="phone" id="phone-id" required placeholder="+7 XXX XXX XX XX*">
+            </div>
+            <div class="filter__list email">
+              <label for="email-id" class="filter__title">E-mail</label>
+              <input class="email__value" type="email" name="email" id="email-id" required placeholder="Ваш Email*">
+            </div>
+            <div class="filter__list comments">
+              <label for="comments-id" class="filter__title">Доп</label>
+              <textarea class="comments__text" type="email" name="email" id="comments-id" rows="7" cols="50" placeholder="Опишите все ваши пожелания к заказу*"></textarea>
+            </div>
+          </div>
+        <p class="form-notice">*Поля обязательны для заполнения</p>
+        <button class="form-button button" type="submit">Отправить заказ</button>
+      </form>
     </section>
 
-      <section class="production-process">
-        <h2 class="production-process__title">Процесс производства</h2>
-        <video class="production-process__video"></video>
-        <p class="production-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <button class="production-process__button" type="button">Сделать заказ</button>
-      </section>
 
       <footer class="footer">
         <div class="footer__social social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><p class="visually-hidden">Мы в Инстаграме</p></a>
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><p class="visually-hidden"> Мы в Вконтакте</p></a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><p class="visually-hidden">Мы в Фейсбуке</p></a>
