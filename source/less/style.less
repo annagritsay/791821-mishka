@@ -1,4 +1,39 @@
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/opensans.woff") format("woff"),
+    url("../fonts/opensans.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-style: bold;
+  src: url("../fonts/opensansbold.woff") format("woff"),
+    url("../fonts/opensansbold.woff2") format("woff2");
+}
 body {
-  background: green;
+  background: #ffffff;
+  font-family: "Open Sans";
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
 }
 
+@import "variables.less";
+@import "mixins.less";
+
+@import "blocks/page-header.less";
+@import "blocks/site-list.less";
+@import "blocks/link.less";
+@import "blocks/button.less";
+@import "blocks/product-category.less";
+@import "blocks/popular-product.less";
+@import "blocks/advantages.less";
+@import "blocks/comments.less";
+@import "blocks/contacts.less";
+@import "blocks/footer.less";
+@import "blocks/social.less";
+@import "blocks/copyright.less";
+@import "blocks/modal-order.less";
