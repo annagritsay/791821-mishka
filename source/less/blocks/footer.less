@@ -1,4 +1,22 @@
 .footer {
   background-color: @grey;
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__logo {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .footer {
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  }
+  .footer__logo {
+  display: block;
+  }
 }

@@ -40,8 +40,36 @@
 .comments__next {
   background-color: white;
   border: none;
+  width: 50%;
+
 }
 
 .comments__prev {
   border-right: 1px solid @grey;
+}
+
+.comments__button {
+  width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .comments {
+    position: relative;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .comments__title {
+  .font (43px; 50px; 700);
+  padding-bottom: 30px;
+  }
+  .comments__button {
+    position: absolute;
+    width: 30%;
+    top: 30px;
+    right: 0;
+  }
+  .comments__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 }

@@ -1,5 +1,7 @@
 .popular-product {
   padding: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .popular-product__header {
@@ -33,11 +35,128 @@
   padding: 12px 23px 12px 0;
 }
 
+.popular-product__wrapper-img {
+  background-color: @grey;
+  display: flex;
+}
+
+.popular-product__image-mobile {
+  margin-left: auto;
+}
+.popular-product__image-desktop,
+.popular-product__image-tablet {
+  display: none;
+}
+
 .popular-product__price {
   .stylenone();
   .font (17px; 24px; 700);
   color: @blacklight;
   padding-top: 25px;
   padding-bottom: 25px;
-  text-align: center;
+  margin: 0 auto;
+}
+
+.popular-product__button {
+  width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .popular-product {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  .popular-product__flex {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .popular-product__wrapper {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+  }
+
+  .popular-product__time {
+    .font (17px; 17px; 700);
+    width: 100px;
+    text-align: center;
+  }
+
+  .popular-product__image-mobile {
+    display: none;
+  }
+  .popular-product__image-tablet {
+    display: block;
+    margin-left: auto;
+  }
+  .popular-product__wrapper-img {
+    background-color: @grey;
+    position: absolute;
+    top: 870px;
+    right: 56px;
+  }
+  .popular-product__button {
+
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .popular-product {
+    position: relative;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+  .popular-product__flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .popular-product__wrapper {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 150px;
+  }
+  .popular-product__header {
+    .stylenone();
+    .font (53px; 57px; 700);
+    padding-left: 45px;
+  }
+
+
+  .popular-product__time {
+    .font (17px; 17px; 700);
+    width: 100px;
+    text-align: center;
+    order: -1;
+  }
+
+  .popular-product__image-mobile,
+  .popular-product__image-tablet {
+    display: none;
+  }
+  .popular-product__image-desktop {
+    display: block;
+    margin-left: auto;
+  }
+  .popular-product__wrapper-img {
+    background-color: @grey;
+    position: absolute;
+    z-index: -1;
+    top: 50px;
+    right: 100px;
+  }
+  .popular-product__price {
+    margin: 0 0 0 70px;
+  }
+  .popular-product__button {
+    width: 70%;
+  }
 }
