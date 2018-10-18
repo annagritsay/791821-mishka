@@ -1,22 +1,22 @@
+.product-category {
+  position: relative;
+  margin-right: -30px;
+  margin-left: -30px;
+}
 .product-category__header {
-  display: inline-block;
-  background-color: #fafafa;
+  background-color: #f9f9f9;
   background-image: url("../../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: 50% 20%;
   height: 283px;
   width: 100%;
-  background-position: 50% 20%;
-  color: black;
-}
-
-.product-category__img {
-  display: none;
 }
 
 .product-category__title {
   .stylenone();
   .font (27px; 30px; 700);
-  padding: 75px 30px 120px 30px;
+  padding-top: 75px;
+  padding-bottom: 120px;
   text-align: center;
 }
 
@@ -39,9 +39,15 @@
 
 @media (min-width: @tablet-width) {
   .product-category {
-
+    position: relative;
+    margin-right: -50px;
+    margin-left: -50px;
   }
-
+  .product-category__header {
+    background-image: none;
+    background-color: transparent;
+    height: auto;
+  }
   .product-category__wrapper {
     display: flex;
     justify-content: stretch;
@@ -49,8 +55,20 @@
     padding-left: 50px;
   }
 
+  .product-category__interior,
+  .product-category__toys {
+    min-height: 120px;
+  }
+
+  .product-category__title {
+    .font (43px; 50px; 700);
+    padding-top: 45px;
+    padding-bottom: 370px;
+  }
+
   .product-category__text {
-    width: 150px;
+    .font (20px; 30px; 700);
+    padding: 30px 180px 30px 33px;
   }
 
   .product-category__header {
@@ -60,24 +78,77 @@
   }
 
   .product-category__link {
+    width: 334px;
+    box-sizing: border-box;
     flex-grow: 1;
   }
   .product-category__img {
     display: block;
     position: absolute;
-    top: 80px;
-    z-index: 0;
-    height: 675px;
+    top: -110px;
+    height: 746px;
     width: 100%;
     z-index: -1;
+    background-color: #f9f9f9;
+
 
     background-image: url("../../img/hero-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: 50% 40%;
   }
-  .product-category__title {
-    .font (43px; 50px; 700);
-    padding: 100px 50px 330px 50px;
+}
 
+@media (min-width: @desktop-width) {
+  .product-category {
+    margin-right: -100px;
+    margin-left: -100px;
+  }
+
+  .product-category__wrapper {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
+  .product-category__interior,
+  .product-category__toys {
+    min-height: 120px;
+  }
+
+  .product-category__title {
+    .font (53px; 57px; 700);
+    padding-top: 90px;
+    padding-bottom: 350px;
+  }
+
+  .product-category__text {
+    .font (20px; 30px; 700);
+    padding: 30px 350px 30px 35px;
+  }
+
+  .product-category__header {
+    background-image: none;
+    background-color: transparent;
+    height: auto;
+  }
+
+  .product-category__link {
+    width: 525px;
+    box-sizing: border-box;
+  }
+
+  .product-category__img {
+    display: block;
+    position: absolute;
+    top: -75px;
+    height: 746px;
+    width: 100%;
+    z-index: -1;
+    background-color: #f9f9f9;
+
+
+    background-image: url("../../img/hero-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
   }
 }
+

@@ -1,5 +1,4 @@
 .comments {
-  .margin();
   padding-top: 30px;
   padding-bottom: 45px;
 }
@@ -41,7 +40,6 @@
   background-color: white;
   border: none;
   width: 50%;
-
 }
 
 .comments__prev {
@@ -54,20 +52,62 @@
 
 @media (min-width: @tablet-width) {
   .comments {
+    padding-top: 83px;
+    padding-bottom: 120px;
+    background-image: url(../../img/review@1x.jpg);
+    background-repeat: no-repeat;
     position: relative;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: -50px;
   }
+
   .comments__title {
   .font (43px; 50px; 700);
-  padding-bottom: 30px;
+  padding-bottom: 63px;
   }
+
   .comments__button {
     position: absolute;
     width: 30%;
-    top: 30px;
+    top: 83px;
     right: 0;
   }
+
+  .comments__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .comments {
+    padding-top: 83px;
+    padding-bottom: 120px;
+    background-image: url(../../img/review@1x.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    margin-left: 0;
+    padding-left: 175px;
+  }
+
+  .comments__title {
+  .font (53px; 57px; 700);
+  padding-bottom: 63px;
+  }
+
+  .comments__text {
+    .font (17px; 30px; 400);
+    padding-bottom: 30px;
+    padding-right: 90px;
+  }
+
+  .comments__button {
+    position: absolute;
+    width: 175px;
+    box-sizing: border-box;
+    top: 83px;
+    right: 0;
+  }
+
   .comments__wrapper {
     display: flex;
     justify-content: space-between;

@@ -1,8 +1,10 @@
 .footer {
   background-color: @grey;
-  padding: 30px;
+  padding-bottom: 30px;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
+  margin: 0 -30px;
 }
 
 .footer__logo {
@@ -11,12 +13,27 @@
 
 @media (min-width: @tablet-width) {
   .footer {
-  padding: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  margin: 0 -50px;
   }
+
   .footer__logo {
   display: block;
+  padding-left: 50px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .footer {
+  margin: 0 -100px;
+  }
+
+  .footer__logo {
+  display: block;
+  padding-left: 100px;
   }
 }

@@ -24,6 +24,22 @@ body {
 
 .center-wrapper {
   margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .center-wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .center-wrapper {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
 
 .visually-hidden:not(:focus):not(:active),
