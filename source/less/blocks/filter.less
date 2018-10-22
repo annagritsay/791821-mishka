@@ -9,3 +9,29 @@
   .stylenone();
   padding-bottom: 27px;
 }
+
+@media (min-width: @tablet-width) {
+  .filter {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 50px;
+  }
+
+  .filter__title {
+    text-transform: none;
+    display: block;
+    width: 167px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+  }
+
+  .filter__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .filter__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
