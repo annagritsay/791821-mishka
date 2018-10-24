@@ -1,13 +1,44 @@
 .filter__title {
+  display: flex;
   .stylenone();
   color: @green;
   text-transform: uppercase;
   .font (17px; 18px; 700);
+  align-items: center;
+}
+
+.filter__title::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: @green;
+  flex-grow: 2;
+  margin-left: 30px;
 }
 
 .filter__list {
   .stylenone();
   padding-bottom: 27px;
+}
+
+.filter__list-phone,
+.filter__list-email {
+  box-sizing: border-box;
+  border: none;
+  padding: 19px 0;
+  padding-right: 45px;
+  border-bottom: 2px solid black;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.filter__list-text {
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  padding: 13px 14px;
+  box-sizing: border-box;
+  border: 2px solid black;
 }
 
 @media (min-width: @tablet-width) {
