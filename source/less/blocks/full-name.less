@@ -1,7 +1,6 @@
 .full-name {
   padding-top: 9px;
   margin-bottom: 5px;
-
 }
 
 .full-name__block {
@@ -9,13 +8,44 @@
 }
 
 .full-name__title {
-width: 100%;
+  width: 100%;
 }
 
 .full-name__name {
-  width: auto;
   border: none;
   padding: 15px 0;
   border-bottom: 2px solid black;
   width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .full-name {
+    padding-top: 65px;
+    margin-bottom: 0;
+  }
+
+  .full-name__title {
+    width: auto;
+  }
+
+  .full-name__block {
+    display: flex;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 43px;
+  }
+
+  .full-name__name {
+    margin-left: 30px;
+    padding: 0 0 12px 15px;
+    border-bottom: 2px solid black;
+    width: auto;
+    flex-grow: 2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .full-name {
+    margin-right: 175px;
+  }
 }

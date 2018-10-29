@@ -22,7 +22,6 @@
             <rect y="12" fill="#231F20" width="19.958" height="2"/>
           </svg>
         </a>
-        <a class="page-header__toggle page-header__toggle--close" href=""></a>
 
         <div class="page-header__site-list  page-header__site-list--order1">
           <a class="page-header__link link" href="">Каталог товаров</a>
@@ -31,10 +30,10 @@
           <a class="page-header__link link" href="form.html">Вязание на заказ</a>
         </div>
         <div class="page-header__site-list page-header__site-list--order3">
-          <a class="page-header__link link" href="">Поиск по сайту</a>
+          <a class="page-header__link page-header__link--hidden link" href="">Поиск по сайту</a>
         </div>
         <div class="page-header__site-list page-header__site-list--order4">
-          <a class="page-header__link link" href="#">Корзина: пока пуста</a>
+          <a class="page-header__link page-header__link--basket link" href="#">Корзина: пока пуста</a>
         </div>
         <div class="page-header__site-list page-header__site-list--order5">
           <a class="page-header__link page-header__link--desktop link" href="#">Новые поступления</a>
@@ -55,7 +54,7 @@
       <section class="catalog-item">
         <ul class="catalog-item__list">
           <li class="catalog-item__prodact">
-            <div class="catalog-item__wrapper">
+            <div class="catalog-item__wrapper1">
               <a href="" class="prodact__img-link link">
                 <img src="img/photo-hare-mobile@1x.jpg" class="catalog-item__image-mobile" width="258">
                 <img src="img/photo-hare-tablet@1x.jpg" class="catalog-item__image-tablet">
@@ -71,11 +70,11 @@
             </div>
           </li>
           <li class="catalog-item__prodact">
-            <div class="catalog-item__wrapper">
+            <div class="catalog-item__wrapper1">
               <a href="" class="catalog-item__img-link link">
                 <img src="img/photo-bowl-mobile@1x.jpg" class="catalog-item__image-mobile" width="258">
                 <img src="img/photo-bowl-tablet@1x.jpg" class="catalog-item__image-tablet">
-                <img src="img/photo-bowl-desktop@1x.jpg" class="catalog-item__image-desktop">
+                <img src="img/photo-bowl-desktop@1x.jpg" class="catalog-item__image-desktop" width="316" height="462">
               </a>
             </div>
             <div class="catalog-item__wrapper">
@@ -87,7 +86,7 @@
             </div>
           </li>
           <li class="catalog-item__prodact">
-            <div class="catalog-item__wrapper">
+            <div class="catalog-item__wrapper1">
               <a href="" class="catalog-item__img-link link">
                 <img src="img/photo-toys-mobile@1x.jpg" class="catalog-item__image-mobile" width="258">
                 <img src="img/photo-toys-tablet@1x.jpg" class="catalog-item__image-tablet">
@@ -106,12 +105,16 @@
       </section>
 
       <section class="production-process">
-        <h2 class="production-process__title">Процесс производства</h2>
-        <img src="img/video-mobile@1x.jpg" width="258" height="150" class="production-process__img-mobile">
-        <img src="img/video-mobile@1x.jpg" width="668" height="455" class="production-process__img-tablet">
-        <img src="img/video-mobile@1x.jpg" width="682" height="455" class="production-process__img-desktop">
-        <p class="production-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <button class="production-process__button button" type="button">Сделать заказ</button>
+        <div class="production-process__wrapper">
+          <h2 class="production-process__title">Процесс производства</h2>
+          <img src="img/video-mobile@1x.jpg" width="258" height="150" class="production-process__img-mobile">
+          <img src="img/video-mobile@1x.jpg" width="668" height="455" class="production-process__img-tablet">
+          <img src="img/video-mobile@1x.jpg" width="682" height="455" class="production-process__img-desktop">
+          <div class="production-process__container">
+            <p class="production-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <button class="production-process__button button" type="button">Сделать заказ</button>
+          </div>
+        </div>
       </section>
 
       <footer class="footer">

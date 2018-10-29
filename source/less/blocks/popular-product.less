@@ -61,14 +61,11 @@
   text-align: center;
 }
 
-.popular-product__button {
-
-}
-
 @media (min-width: @tablet-width) {
   .popular-product {
     padding-bottom: 0;
-    margin-bottom: 125px;
+    margin-top: 18px;
+    margin-bottom: 67px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -94,13 +91,14 @@
 
   .popular-product__time {
     width: 100px;
+    padding-right: 12px;
     text-align: center;
   }
 
   .popular-product__description {
     .font (17px; 30px; 400);
-    padding-top: 50px;
-    padding-bottom: 40px;
+    padding-top: 45px;
+    padding-bottom: 35px;
   }
 
   .popular-product__property {
@@ -109,7 +107,7 @@
 
   .popular-product__string {
     border-bottom: 1px solid @grey;
-    padding-right: 25px;
+    padding: 10px 0 8px 0;
   }
 
   .popular-product__image-mobile {
@@ -126,11 +124,23 @@
     bottom: 0;
     right: 0;
   }
+
+  .popular-product__price {
+    .font (20px; 24px; 700);
+    padding-top: 33px;
+    padding-bottom: 34px;
+  }
+
+  .popular-product__button {
+    width: 290px;
+    box-sizing: border-box;
+    padding: 15px 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .popular-product {
-    padding-top: 120px;
+    padding-top: 107px;
     margin-bottom: 70px;
     position: relative;
     display: flex;
@@ -144,7 +154,7 @@
   }
 
   .popular-product__wrapper {
-    width: 350px;
+    width: 340px;
     box-sizing: border-box;
     margin-left: 175px;
   }
@@ -165,12 +175,17 @@
 
   .popular-product__description {
     .font (17px; 30px; 400);
-    padding-top: 55px;
-    padding-bottom: 60px;
+    padding-top: 50px;
+    padding-bottom: 45px;
   }
 
   .popular-product__property {
-    margin-bottom: 100px;
+    margin-bottom: 108px;
+  }
+
+  .popular-product__string {
+    border-bottom: 1px solid @grey;
+    padding: 10px 0 10px 0;
   }
 
   .popular-product__image-mobile,
@@ -193,11 +208,11 @@
 
   .popular-product__price {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
     padding: 0;
   }
 
   .popular-product__button {
-    width: 70%;
+    width: 292px;
   }
 }

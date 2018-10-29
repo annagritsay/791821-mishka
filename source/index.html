@@ -30,10 +30,10 @@
         <a class="page-header__link link" href="form.html">Вязание на заказ</a>
       </div>
       <div class="page-header__site-list page-header__site-list--order3">
-        <a class="page-header__link link" href="">Поиск по сайту</a>
+        <a class="page-header__link page-header__link--hidden link" href="">Поиск по сайту</a>
       </div>
       <div class="page-header__site-list page-header__site-list--order4">
-        <a class="page-header__link link" href="#">Корзина: пока пуста</a>
+        <a class="page-header__link  page-header__link--basket link" href="#">Корзина: пока пуста</a>
       </div>
       <div class="page-header__site-list page-header__site-list--order5">
         <a class="page-header__link page-header__link--desktop link" href="#">Новые поступления</a>
@@ -92,14 +92,18 @@
 
     <section class="advantages">
       <h2 class="advantages__title">Коротко о нас:</h2>
-      <ul class="advantages__list">
-        <li class="advantages__item">Экологически<br>чистые материалы</li>
-        <li class="advantages__item">Скандинавский стиль<br>по российской цене</li>
-        <li class="advantages__item">Увеличивает лайки<br>на фотографиях</li>
-        <li class="advantages__item">Связано вручную с<br>любовью и умилением</li>
-        <li class="advantages__item">Поддержка отечественного производителя</li>
-        <li class="advantages__item">Поставляется в<br>подарочной упаковке</li>
-      </ul>
+      <div class="advantages__list">
+        <div class="advantages__wrapper">
+          <div class="advantages__item">Экологически<br class="advantages__hidden"> чистые материалы</div>
+          <div class="advantages__item">Скандинавский стиль<br>по российской цене</div>
+          <div class="advantages__item">Увеличивает лайки<br>на фотографиях</div>
+        </div>
+        <div class="advantages__wrapper">
+          <div class="advantages__item">Связано вручную с<br>любовью и умилением</div>
+          <div class="advantages__item">Поддержка отечественного производителя</div>
+          <div class="advantages__item">Поставляется в<br>подарочной упаковке</div>
+        </div>
+      </div>
     </section>
 
     <section class="comments">
@@ -135,7 +139,7 @@
           </div>
           <div class="contacts__wrapper">
             <p class="contacts__adress-name">адрес:</p>
-            <p class="contacts__adress">г. Санкт-Петербург,<br>ул. Большая<br>Конюшенная,<br>д. 19/8, офис 101</p>
+            <p class="contacts__adress">г. Санкт-Петербург,<br>ул. Большая<br class="contacts__hidden"> Конюшенная,<br>д. 19/8, офис 101</p>
           </div>
         </section>
         <iframe src="https://yandex.ru/map-widget/v1/-/CBBsjMuVwA" width="auto" height="457" frameborder="1" allowfullscreen="true" class="contacts__map"></iframe>

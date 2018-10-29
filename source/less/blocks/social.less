@@ -59,8 +59,26 @@
 }
 
 @media (min-width: @tablet-width) {
+  .social {
+    border: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 120px;
+  }
+
   .social__item {
-    padding-left: 20px;
-    text-align: center;
+    padding: 30px 0 0 60px;
+  }
+
+  .social__link--instagram::before {
+    bottom: -4px;
+  }
+
+  .social__link--facebook::before {
+    bottom: -4px;
+  }
+
+  .social__link--twitter::before {
+    bottom: -4px;
   }
 }

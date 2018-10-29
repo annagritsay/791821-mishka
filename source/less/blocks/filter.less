@@ -45,24 +45,92 @@
   .filter {
     display: flex;
     flex-direction: row;
-    padding-bottom: 50px;
   }
 
   .filter__title {
-    text-transform: none;
+    padding-top: 66px;
+    .font (17px; 17px; 700);
     display: block;
     width: 167px;
     box-sizing: border-box;
     flex-shrink: 0;
   }
 
+  .filter__title--color {
+    padding-left: 50px;
+  }
+
+  .filter__color {
+    margin: 0 -50px;
+    background-color: @grey;
+  }
+
+  .filter__email {
+    padding-top: 25px;
+  }
+
   .filter__list {
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 5px;
+  }
+
+  .filter__list-phone {
+    padding-top: 62px;
+    margin-bottom: 16px;
+  }
+
+  .filter__list-email {
+    margin-bottom: 50px;
+  }
+
+  .filter__list-phone,
+  .filter__list-email {
+    background-color: @grey;
+    border: none;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-right: 45px;
+    padding-left: 15px;
+    border-bottom: 2px solid black;
+    width: 100%;
   }
 
   .filter__wrapper {
     display: flex;
     justify-content: space-between;
+  }
+
+  .filter__list-text {
+    width: 100%;
+    max-height: 143px;
+    margin-top: 48px;
+    margin-bottom: 53px;
+    padding: 13px 14px;
+    box-sizing: border-box;
+    border: 2px solid black;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .filter__title {
+    padding-left: 65px;
+    width: 180px;
+  }
+
+  .filter__title--color {
+    padding-left: 115px;
+    width: 230px;
+  }
+
+  .filter__list-phone,
+  .filter__list-email {
+    margin-right: 225px;
+    margin-left: 0;
+  }
+
+  .filter__list-text {
+    margin-right: 175px;
+    margin-bottom: 50px;
   }
 }
