@@ -1,4 +1,5 @@
 .contacts {
+  padding-top: 42px;
   display: flex;
   flex-direction: column;
 }
@@ -9,19 +10,27 @@
 }
 
 .contacts__table {
+  display: flex;
+  flex-direction: column;
   .stylenone();
   margin-bottom: 40px;
+}
+
+.contacts__wrapper {
+  display: flex;
+  width: 260px;
+  box-sizing: border-box;
 }
 
 .contacts__adress {
   .stylenone();
   .font (15px; 30px; 400);
   color: @blacklight;
-  padding-top: 30px;
+  padding-top: 27px;
 }
 
 .contacts__adress--underline {
-  border-bottom: 2px solid @green;
+  border-bottom: 1px solid @green;
 }
 
 .contacts__adress-name {
@@ -29,7 +38,8 @@
   .font (15px; 30px; 400);
   vertical-align: top;
   color: @blacklight;
-  padding-top: 30px;
+  padding-top: 27px;
+  padding-right: 30px;
 }
 
 .contacts__map {
@@ -38,75 +48,93 @@
 }
 
 .contacts__button {
+  .font (18px; 20px; 700);
   margin-bottom: 40px;
-  margin-top: 40px;
-  width: 100%;
+  margin-top: 35px;
 }
 
 @media (min-width: @tablet-width) {
+  .contacts {
+    padding-top: 75px;
+  }
+
   .contacts__title {
     .font (43px; 50px; 700);
+    padding-bottom: 20px;
   }
 
   .contacts__table {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 58px;
   }
 
   .contacts__adress-name {
+    padding-right: 22px;
+    .font (17px; 30px; 400);
+  }
+
+  .contacts__adress {
     .font (17px; 30px; 400);
   }
 
   .contacts__wrapper {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding-right: 35px;
     width: 334px;
     box-sizing: border-box;
   }
 
+  .contacts__hidden {
+    display: none;
+  }
+
   .contacts__button {
     width: 230px;
     box-sizing: border-box;
-    margin-left: 217px;
+    margin-left: 219px;
     margin-bottom: 57px;
-    margin-top: 57px;
+    margin-top: 55px;
   }
 
   .contacts__map {
     margin-left: -50px;
     margin-right: -50px;
+    border: none;
   }
 }
 
 @media (min-width: @desktop-width) {
   .contacts {
+    padding-top: 0;
     padding-left: 175px;
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 105px;
   }
 
   .contacts__title {
     .font (53px; 57px; 700);
-    padding-top: 75px;
+    padding-top: 35px;
   }
 
   .contacts__table {
     display: flex;
     flex-direction: column;
     margin-right: 150px;
-    margin-bottom: 85px;
-    margin-top: 20px;
+    margin-bottom: 82px;
+    margin-top: 0;
   }
 
   .contacts__map {
     margin: 0;
     position: absolute;
     width: 525px;
-    height: 100%;
+    height: 460px;
     box-sizing: border-box;
-    top: 0;
+    bottom: 0;
     right: 0;
   }
 
