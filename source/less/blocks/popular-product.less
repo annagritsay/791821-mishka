@@ -43,7 +43,11 @@
   background-color: @grey;
 }
 
-.popular-product__image-mobile {
+.popular-product__wrapper-img picture {
+  display: flex;
+}
+
+.popular-product__image {
   margin-left: auto;
 }
 
@@ -110,11 +114,7 @@
     padding: 10px 0 8px 0;
   }
 
-  .popular-product__image-mobile {
-    display: none;
-  }
-
-  .popular-product__image-tablet {
+  .popular-product__image {
     display: block;
     margin-left: auto;
   }
