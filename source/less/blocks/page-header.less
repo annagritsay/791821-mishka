@@ -50,6 +50,10 @@
   display: none;
 }
 
+.page-header__search path {
+  fill: red;
+}
+
 @media (min-width: @tablet-width) {
   .page-header {
     display: flex;
@@ -130,21 +134,17 @@
     overflow: hidden;
   }
 
-  .page-header__site-list--order3::before {
-    content: "";
-    position: absolute;
-    left: 30px;
-    bottom: 33px;
-    width: 17.6px;
-    height: 17.6px;
-    background-image: url("../img/icon-search.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+  .page-header__search {
+    opacity: 0.3;
+  }
+
+  .page-header__cart {
+    padding-left: 0;
+    padding-right: 20px;
     opacity: 0.3;
   }
 
   .page-header__site-list--order4 {
-    padding-left: 80px;
     padding-right: 0;
     order: 2;
   }
