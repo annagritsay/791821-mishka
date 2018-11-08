@@ -19,6 +19,18 @@
   justify-content: space-around;
 }
 
+.social__link {
+  &:hover,
+  &:focus {
+    fill: @green;
+  }
+
+  &:active {
+    fill: @green;
+    opacity: 0.5;
+  }
+}
+
 .social__link--instagram::before {
   content: "";
   position: absolute;

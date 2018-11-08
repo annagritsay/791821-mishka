@@ -5,6 +5,10 @@
   display: flex;
   justify-content: flex-end;
   margin: 0 30px;
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .copyright__text {
@@ -19,6 +23,16 @@
   position: absolute;
   top: 22px;
   right: 0;
+
+  &:hover,
+  &:focus {
+    fill: @green;
+  }
+
+  &:active {
+    fill: @green;
+    opacity: 0.5;
+  }
 }
 
 @media (min-width: @tablet-width) {

@@ -28,19 +28,66 @@
 
 .product-category__interior {
   background-color: @green;
+  position: relative;
 }
+
+.product-category__interior::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  width: 40px;
+  height: 62px;
+  background-image: url("../img/icon-interior.svg");
+  background-repeat: no-repeat;
+  transform: scale(0.8);
+}
+
+.product-category__interior:hover::after,
+.product-category__interior:focus::after {
+  top: 15px;
+  height: 67px;
+}
+
 
 .product-category__text {
   width: 130px;
-  box-sizing: border-box;
   .stylenone();
   .font (19px; 24px; 700);
   padding: 25px 30px 29px 30px;
   color: white;
 }
 
+.product-category__text:active {
+  opacity: 0.5;
+}
+
 .product-category__toys {
+  position: relative;
   background-color: @greendark;
+}
+
+.product-category__toys::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/icon-toy.svg");
+  background-repeat: no-repeat;
+  transform: scale(0.8);
+}
+
+.product-category__toys:hover::after,
+.product-category__toys:focus::after {
+  top: 15px;
+  height: 65px;
+}
+
+.product-category__toys:active::after,
+.product-category__interior:active::after {
+  opacity: 0.5;
 }
 
 @media (min-width: @tablet-width) {
