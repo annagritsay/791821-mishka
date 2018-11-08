@@ -5,6 +5,7 @@
 }
 
 .type__item {
+  position: relative;
   .stylenone();
   padding-top: 25px;
   padding-left: 62px;
@@ -16,6 +17,43 @@
 
 .type__input {
   .stylenone();
+}
+
+.type__input + label::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 5px;
+
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 2px solid #4e4e4e;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.type__input--radio:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 17px;
+  top: 19px;
+  width: 15px;
+  height: 15px;
+
+  background-color: @green;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.type__input:checked + label:hover::after,
+.type__input + label:hover::before {
+  border-color: @green;
+}
+
+.type__input + label:active::before {
+  border-color: #4e4e4e;
+  opacity: 0.5;
 }
 
 @media (min-width: @tablet-width) {

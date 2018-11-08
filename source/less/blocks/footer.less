@@ -26,9 +26,18 @@
   .footer__logo {
     display: block;
     padding-left: 50px;
+
+    &:hover,
+    &:focus {
+      fill: @green;
+    }
+
+    &:active {
+      fill: @green;
+      opacity: 0.5;
+    }
   }
 }
-
 
 @media (min-width: @desktop-width) {
   .footer {

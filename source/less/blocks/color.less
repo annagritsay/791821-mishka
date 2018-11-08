@@ -3,9 +3,50 @@
 }
 
 .color__item {
+  position: relative;
   padding-top: 35px;
   padding-bottom: 8px;
   padding-left: 63px;
+}
+
+
+.color-input + label::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 20px;
+
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 2px solid #4e4e4e;
+  cursor: pointer;
+}
+
+.color-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 25px;
+  width: 32px;
+  height: 22px;
+  transform: scale(0.7);
+
+  background-image: url("../img/icon-tick.svg");
+  opacity: 0.8;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+}
+
+.color-input-checkbox:checked + label:hover::after,
+.color-input + label:hover::before {
+  border-color: @green;
+}
+
+.color-input + label:active::before {
+  border-color: #4e4e4e;
+  opacity: 0.5;
 }
 
 @media (min-width: @tablet-width) {

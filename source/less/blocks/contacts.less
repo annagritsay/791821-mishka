@@ -27,6 +27,17 @@
   .font (15px; 30px; 400);
   color: @blacklight;
   padding-top: 27px;
+
+
+  &:hover,
+  &:focus {
+    color: @green;
+  }
+
+  &:active {
+    color: @green;
+    opacity: 0.5;
+  }
 }
 
 .contacts__adress--underline {
@@ -61,6 +72,17 @@
   .contacts__title {
     .font (43px; 50px; 700);
     padding-bottom: 20px;
+    position: relative;
+  }
+
+  .contacts__title::after {
+    content: "";
+    position: absolute;
+    width: 46px;
+    height: 82px;
+    left: 580px;
+    bottom: 20px;
+    background-image: url("../img/icon-flag.svg");
   }
 
   .contacts__table {
@@ -109,7 +131,7 @@
 
 @media (min-width: @desktop-width) {
   .contacts {
-    padding-top: 0;
+    padding-top: 75px;
     padding-left: 175px;
     position: relative;
     margin-bottom: 105px;
@@ -118,6 +140,16 @@
   .contacts__title {
     .font (53px; 57px; 700);
     padding-top: 35px;
+  }
+
+  .contacts__title::after {
+    content: "";
+    position: absolute;
+    width: 46px;
+    height: 82px;
+    left: -80px;
+    bottom: 20px;
+    background-image: url("../img/icon-flag.svg");
   }
 
   .contacts__table {
@@ -134,7 +166,7 @@
     width: 525px;
     height: 460px;
     box-sizing: border-box;
-    bottom: 0;
+    top: 55px;
     right: 0;
   }
 
