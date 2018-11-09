@@ -95,6 +95,19 @@
     position: relative;
     margin-right: -50px;
     margin-left: -50px;
+
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: contain;
+      width: 100%;
+      height: 27px;
+      left: 0;
+      bottom: -15px;
+    }
   }
 
   .product-category__header {
@@ -114,6 +127,15 @@
   .product-category__interior,
   .product-category__toys {
     min-height: 120px;
+  }
+
+  .product-category__interior::after {
+    top: 30px;
+  }
+
+  .product-category__toys::after {
+    top: 30px;
+    right: 35px;
   }
 
   .product-category__title {
