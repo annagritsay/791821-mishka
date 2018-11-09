@@ -1,11 +1,12 @@
 .advantages {
   padding-top: 35px;
-  padding-bottom: 30px;
+  padding-bottom: 0;
 }
 
 .advantages__title {
   .stylenone();
   .fonttitle();
+  padding-bottom: 73px;
 }
 
 .advantages__list {
@@ -13,8 +14,16 @@
 }
 
 .advantages__item {
-  padding-top: 83px;
+  padding-bottom: 45px;
+  padding-top: 2px;
   .font (17px; 20px; 700);
+  position: relative;
+}
+
+.advantages__svg {
+  position: absolute;
+  top: -35px;
+  left: 6;
 }
 
 @media (min-width: @tablet-width) {

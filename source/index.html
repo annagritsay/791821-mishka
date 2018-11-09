@@ -30,7 +30,7 @@
         <a class="page-header__link link" href="form.html">Вязание на заказ</a>
       </div>
       <div class="page-header__site-list page-header__site-list--order3">
-        <a class="page-header__link  link" href=""><svg class="page-header__search" width="17.6px" height="17.6px"><use xlink:href="#icon-search"></use></svg><p class="page-header__link--hidden">Поиск по сайту</p></a>
+        <a class="page-header__link page-header__link--search link" href=""><svg class="page-header__search" width="17.6px" height="17.6px"><use xlink:href="#icon-search"></use></svg><p class="page-header__link--hidden">Поиск по сайту</p></a>
       </div>
       <div class="page-header__site-list page-header__site-list--order4">
         <a class="page-header__link  page-header__link--basket link" href="#"><svg class="page-header__cart" width="20.294px" height="18.849px"><use xlink:href="#icon-cart"></use></svg>Корзина: пока пуста</a>
@@ -69,7 +69,7 @@
         <table class="popular-product__property">
           <tr>
             <td class="popular-product__string">Цвет:</td>
-            <td class="popular-product__string">"Тиффани"/серый</td>
+            <td class="popular-product__string">&#171Тиффани&#187/серый</td>
           </tr>
           <tr>
             <td class="popular-product__string">Диаметр:</td>
@@ -97,29 +97,29 @@
       <div class="advantages__list">
         <div class="advantages__wrapper">
           <div class="advantages__item">
-            <svg width="31.972px" height="37.301px"><use xlink:href="#icon-feature-flower"></use></svg>
+            <svg class="advantages__svg" width="31.972px" height="37.301px"><use xlink:href="#icon-feature-flower"></use></svg>
             <p>Экологически<br class="advantages__hidden"> чистые материалы</p>
             </div>
           <div class="advantages__item">
-            <svg width="46.575px" height="27.332px"><use xlink:href="#icon-feature-money"></use></svg>
+            <svg class="advantages__svg" width="46.575px" height="27.332px"><use xlink:href="#icon-feature-money"></use></svg>
             <p>Скандинавский стиль<br>по российской цене</p>
           </div>
           <div class="advantages__item">
-            <svg width="33.05px" height="27.857px"><use xlink:href="#icon-feature-heart"></use></svg>
+            <svg class="advantages__svg" width="33.05px" height="27.857px"><use xlink:href="#icon-feature-heart"></use></svg>
             <p>Увеличивает лайки<br>на фотографиях</p>
           </div>
         </div>
         <div class="advantages__wrapper">
           <div class="advantages__item">
-            <svg width="34.373px" height="34.373px"><use xlink:href="#icon-feature-ball"></use></svg>
+            <svg class="advantages__svg" width="34.373px" height="34.373px"><use xlink:href="#icon-feature-ball"></use></svg>
             <p>Связано вручную с<br>любовью и умилением</p>
           </div>
-          <div class="advantages__item">
-            <svg width="54.156px" height="23.183px"><use xlink:href="#icon-feature-rocket"></use></svg>
+          <div class="advantages__item" class="advantages__item">
+            <svg class="advantages__svg" width="54.156px" height="23.183px"><use xlink:href="#icon-feature-rocket"></use></svg>
             <p>Поддержка отечественного производителя</p>
           </div>
           <div class="advantages__item">
-            <svg width="32.666px" height="32.486px"><use xlink:href="#icon-feature-gift"></use></svg>
+            <svg class="advantages__svg" width="32.666px" height="32.486px"><use xlink:href="#icon-feature-gift"></use></svg>
             <p>Поставляется в<br>подарочной упаковке</p>
           </div>
         </div>
@@ -174,7 +174,7 @@
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook link" href="https://www.facebook.com/htmlacademy"><p class="visually-hidden">Мы в Фейсбуке</p>
-              <svg width="14.962px" height="27.718px"><use xlink:href="#icon-fb"></use></svg>
+              <svg class="social__svg" width="14.962px" height="27.718px"><use xlink:href="#icon-fb"></use></svg>
             </a>
           </li>
           <li class="social__item">
@@ -192,8 +192,7 @@
         </a>
       </div>
     </footer>
-
-    <section class="modal-order">
+        <section class="modal-order">
       <h2 class="modal-order__title">Добавить в корзину</h2>
       <p class="modal-order__text">Выберите размер:</p>
       <div class="modal-order__wrapper">
@@ -204,5 +203,6 @@
       <button class="modal-order__button button" type="button">Заказать</button>
     </section>
 </div>
+<div class="overlay"></div>
   </body>
 </html>
