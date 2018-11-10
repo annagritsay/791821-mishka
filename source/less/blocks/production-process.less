@@ -144,9 +144,33 @@
 @media (min-width: @desktop-width) {
   .production-process {
     position: relative;
-    padding-left: 680px;
     margin-bottom: 105px;
-    width: 1050px;
+    width: 368px;
+    padding-left: 680px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 77px;
+      left: 290px;
+      top: 190px;
+      background-image: url("../img/icon-play.svg");
+      background-repeat: no-repeat;
+      z-index: 2;
+    }
+  }
+
+  .production-process__wrapper {
+    display: block;
+    width: auto;
+    border: none;
+    margin: none;
+    position: static;
+
+    &::before {
+      display: none;
+    }
   }
 
   .production-process__title {
@@ -156,7 +180,12 @@
     padding-top: 95px;
     padding-left: 80px;
     padding-right: 80px;
-    padding-bottom: 35px;
+    padding-bottom: 34px;
+
+    &::before {
+      left: 80px;
+      top: 40px;
+    }
   }
 
   .production-process__container {
@@ -182,7 +211,7 @@
     margin-bottom: 60px;
   }
 
-  .production-process__img {
+  .production-process__img-conteiner {
     position: absolute;
     top: 0;
     left: 0;

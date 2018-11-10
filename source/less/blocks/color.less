@@ -91,3 +91,19 @@
   cursor: pointer;
 }
 }
+
+@media (min-width: @desktop-width) {
+  .color__item {
+    padding: 0 180px 58px 80px;
+  }
+
+  .color-input + label::before {
+    left: 0;
+    top: -16px;
+  }
+
+  .color-input-checkbox:checked + label::after {
+    left: 10px;
+    top: 0;
+  }
+}
