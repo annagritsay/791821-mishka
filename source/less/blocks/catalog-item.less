@@ -100,7 +100,7 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: stretch;
   }
 
   .catalog-item__prodact {
@@ -112,6 +112,7 @@
   }
 
   .catalog-item__title {
+    flex-grow: 0;
     .font (20px; 24px; 700);
     padding-right: 70px;
     padding-left: 25px;
@@ -124,9 +125,11 @@
     margin: 0;
     padding-left: 25px;
     padding-bottom: 153px;
+    flex-grow: 2;
   }
 
   .catalog-item__price {
+    flex-grow: 0;
     border-top: 1px solid @grey;
     .font (17px; 24px; 700);
     margin-left: 30px;

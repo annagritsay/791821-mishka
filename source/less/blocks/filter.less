@@ -146,6 +146,21 @@
     padding-top: 25px;
   }
 
+  .filter__mail {
+    &::after {
+      right: 70px;
+      bottom: 60px;
+    }
+  }
+
+  .filter__tel {
+    &::after {
+      content: "";
+      right: 75px;
+      bottom: 37px;
+    }
+  }
+
   .filter__list {
     display: flex;
     flex-wrap: wrap;
@@ -155,10 +170,12 @@
   .filter__list-phone {
     padding-top: 62px;
     margin-bottom: 16px;
+    padding-bottom: 15px;
   }
 
   .filter__list-email {
     margin-bottom: 50px;
+    .font(19px; 17px; 400);
   }
 
   .filter__list-phone,
