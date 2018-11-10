@@ -179,6 +179,20 @@
   .product-category {
     margin-right: -50px;
     margin-left: -50px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: 110% 110%;
+      background-position: 10px 0;
+      width: 100%;
+      box-sizing: border-box;
+      height: 40px;
+      left: 0;
+      bottom: -20px;
+    }
   }
 
   .product-category__wrapper {

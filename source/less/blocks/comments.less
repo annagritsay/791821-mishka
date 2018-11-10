@@ -164,12 +164,11 @@
 
 @media (min-width: @desktop-width) {
   .comments {
+    margin: 0;
     padding-top: 70px;
-    padding-bottom: 290px;
-    margin-left: 0;
+    padding-bottom: 190px;
     padding-left: 175px;
   }
-
 
   .comments__title {
     .font (53px; 57px; 700);
@@ -179,7 +178,7 @@
 
   .comments__text {
     padding-bottom: 35px;
-    padding-right: 90px;
+    padding-right: 105px;
     padding-left: 0;
   }
 
@@ -193,7 +192,22 @@
 
   .comments__wrapper {
     padding-left: 0;
+    padding-right: 0;
     display: flex;
     justify-content: space-between;
+  }
+
+  .comments::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: 20px 0;
+    width: 100%;
+    height: 34px;
+    left: 0;
+    bottom: -5px;
+    opacity: 0.4;
   }
 }

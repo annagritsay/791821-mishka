@@ -239,6 +239,7 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
+    max-width: 1050px;
     padding: 0;
   }
 
@@ -256,6 +257,7 @@
   }
 
   .page-header__logo {
+    width: auto;
     padding-right: 80px;
     padding-left: 0;
     padding-top: 8px;
@@ -278,14 +280,16 @@
 
   .page-header__site-list--order1 {
     padding-top: 30px;
-    padding-right: 75px;
+    padding-right: 35px;
     order: 0;
+    border-right: 2px solid @grey;
   }
 
   .page-header__site-list--order2 {
     order: 0;
     padding-top: 30px;
     padding-right: 60px;
+    padding-left: 18px;
   }
 
   .page-header__site-list--order3 {
@@ -315,6 +319,17 @@
 
   .page-header__site-list--order7 {
     order: 8;
+  }
+
+  .page-header__search {
+    position: absolute;
+    top: 35px;
+    left: 33px;
+  }
+
+  .page-header__cart {
+    left: 15px;
+    top: 33px;
   }
 
   .page-header__link--tablet {

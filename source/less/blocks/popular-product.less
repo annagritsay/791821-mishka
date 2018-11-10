@@ -171,6 +171,7 @@
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
   background-size: contain;
+  background-position: 20px 0;
   width: 100%;
   height: 17px;
   left: 0;
@@ -182,8 +183,10 @@
 
 @media (min-width: @desktop-width) {
   .popular-product {
+    margin: 0;
+    margin-top: 18px;
     padding-top: 107px;
-    padding-bottom: 70px;
+    padding-bottom: 116px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -193,9 +196,11 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin: 0;
   }
 
   .popular-product__wrapper {
+    margin: 0;
     width: 340px;
     box-sizing: border-box;
     margin-left: 175px;
@@ -208,9 +213,9 @@
 
   .popular-product__time {
     .font (17px; 17px; 700);
-    width: 175px;
+    width: 172px;
     box-sizing: border-box;
-    padding: 0 45px;
+    padding: 0 25px;
     text-align: center;
     order: -1;
   }
@@ -244,7 +249,7 @@
     background-color: @grey;
     position: absolute;
     z-index: -1;
-    bottom: 70px;
+    bottom: 116px;
     right: 0;
   }
 
@@ -256,5 +261,18 @@
 
   .popular-product__button {
     width: 292px;
+  }
+
+  .popular-product::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: contain;
+    width: 100%;
+    height: 37px;
+    left: 0;
+    bottom: 0;
+    opacity: 0.2;
   }
 }
