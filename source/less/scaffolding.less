@@ -17,12 +17,14 @@
 body {
   min-width: 320px;
   background: #ffffff;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   box-sizing: border-box;
   margin: 0;
 }
 
 .center-wrapper {
+  max-width: 320px;
+  box-sizing: border-box;
   padding-left: 30px;
   padding-right: 30px;
   margin: 0 auto;
@@ -39,10 +41,21 @@ body {
   opacity: 0.3;
 }
 
+.overlay-active {
+  display: block;
+}
+
 @media (min-width: @tablet-width) {
   .center-wrapper {
+    max-width: 768px;
     padding-left: 50px;
     padding-right: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .center-wrapper {
+    max-width: 1150px;
   }
 }
 
