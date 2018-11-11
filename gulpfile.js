@@ -29,17 +29,6 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
-gulp.task("js", function () {
-  return gulp.src("source/js/**")
-    .pipe(minify())
-    .pipe(gulp.dest("build/js"))
-    .pipe(rename("**.min.js"))
-    .pipe(gulp.dest("build/js"))
-    .pipe(server.stream());
-});
-
-"source/js/**"
-
 gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))

@@ -25,6 +25,12 @@
             <use xlink:href="#icon-menu-close"></use>
           </svg>
         </a>
+        <a class="page-header__toggle page-header__toggle-close" href="">
+          <svg width="19.958px" height="14px">
+            <use xlink:href="#icon-menu-close"></use>
+          </svg>
+        </a>
+<!--Классы page-header__toggle-close и page-header__toggle будут переключать гамбургер на крестик-->
         <div class="page-header__site-list  page-header__site-list--order1">
           <a class="page-header__link link" href="">Каталог товаров</a>
         </div>
@@ -36,7 +42,7 @@
             <svg class="page-header__search" width="17.6px" height="17.6px">
               <use xlink:href="#icon-search"></use>
             </svg>
-            <p class="page-header__link--hidden">Поиск по сайту</p>
+            <p class="page-header__link-hidden">Поиск по сайту</p>
           </a>
         </div>
         <div class="page-header__site-list page-header__site-list--order4">
@@ -56,6 +62,7 @@
         <div class="page-header__site-list page-header__site-list--order7">
           <a class="page-header__link page-header__link--tablet link" href="#">Бесплатная доставка по России</a>
         </div>
+<!--Класс page-header__menu--close взамен  page-header__site-list будет прятать все пункты меню-->
       </header>
       <div class="catalog">
         <div class="catalog__background"></div>
@@ -65,7 +72,7 @@
         <ul class="catalog-item__list">
           <li class="catalog-item__prodact">
             <div class="catalog-item__wrapper1">
-              <a href="" class="prodact__img-link link">
+              <a href="" class="catalog-item__img-link link">
                 <picture>
                   <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
@@ -132,7 +139,7 @@
               </a>
             </div>
             <div class="catalog-item__wrapper">
-              <a href="" class="prodact__title-link link">
+              <a href="" class="catalog-item__title-link link">
                 <h3 class="catalog-item__title">Большая корзинка для игрушек</h3>
               </a>
               <p class="catalog-item__characteristic">Диаметр 30 см высота 30 см</p>
