@@ -13,11 +13,11 @@
 .color-input + label::before {
   content: "";
   position: absolute;
-  left: 2px;
-  top: 20px;
+  left: 0;
+  top: 22px;
 
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 35px;
   background-color: transparent;
   border: 2px solid #4e4e4e;
   cursor: pointer;
@@ -27,7 +27,7 @@
   content: "";
   position: absolute;
   left: 2px;
-  top: 25px;
+  top: 31px;
   width: 32px;
   height: 22px;
   transform: scale(0.7);
@@ -57,8 +57,53 @@
   }
 
   .color__item {
-    padding: 0 130px 58px 130px;
-    width: 240px;
-    box-sizing: border-box;
+    padding: 0 0 58px 130px;
+    width: 133px;
+  }
+
+  .color-input + label::before {
+    content: "";
+    position: absolute;
+    left: 50px;
+    top: -15px;
+
+    width: 50px;
+    height: 49px;
+    background-color: transparent;
+    border: 2px solid #4e4e4e;
+    cursor: pointer;
+  }
+
+  .color-input-checkbox:checked + label::after {
+    content: "";
+    position: absolute;
+    left: 60px;
+    top: 0;
+    width: 32px;
+    height: 22px;
+    transform: scale(1);
+
+    background-image: url("../img/icon-tick.svg");
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .color__item {
+    padding: 0 30px 58px 79px;
+    width: 152px;
+  }
+
+  .color-input + label::before {
+    left: 0;
+    top: -16px;
+  }
+
+  .color-input-checkbox:checked + label::after {
+    left: 10px;
+    top: 0;
   }
 }

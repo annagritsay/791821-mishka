@@ -2,7 +2,7 @@
   position: relative;
   .stylenone();
   padding-top: 22px;
-  padding-bottom: 22px;
+  padding-bottom: 19px;
 }
 
 .page-header__logo {
@@ -30,22 +30,89 @@
 }
 
 .page-header__toggle {
+  display: none;
+  position: absolute;
+  top: 31px;
+  right: 0;
+}
+
+.page-header__toggle--close {
+  display: none;
   position: absolute;
   top: 31px;
   right: 0;
 }
 
 .page-header__site-list {
-  display: none;
   .stylenone();
-  padding-top: 30px;
-  padding-bottom: 30px;
+  display: block;
+  padding-top: 27px;
+  padding-bottom: 27px;
   padding-left: 75px;
   border-bottom: 2px solid @grey;
+  margin-right: -30px;
+  margin-left: -30px;
+}
+
+.page-header__site-list--order1 {
+  margin-top: 30px;
+  border-top: 2px solid @grey;
+}
+
+.page-header__link-hidden {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+}
+
+.page-header__site-list--order3 {
+  position: relative;
+}
+
+.page-header__search,
+.page-header__cart {
+  position: absolute;
+  top: 27px;
+  left: 30px;
+  opacity: 0.3;
+
+  &:hover,
+  &:focus {
+    fill: @green;
+    opacity: 1;
+  }
+
+  &:active {
+    fill: @green;
+    opacity: 0.3;
+  }
 }
 
 .page-header__link {
   .font (17px; 24px; 700);
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+}
+
+.page-header__site-list--order4 {
+  border-bottom: none;
+  padding-bottom: 8px;
+  position: relative;
 }
 
 .page-header__link--desktop,
@@ -59,6 +126,10 @@
   display: none;
 }
 
+.page-header__menu--close {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .page-header {
     display: flex;
@@ -68,7 +139,9 @@
   }
 
   .page-header__logo {
-    width: auto;
+    padding-right: 27%;
+    width: 43%;
+    box-sizing: border-box;
     margin: 0;
     display: block;
     order: 0;
@@ -91,15 +164,6 @@
     .font (15px; 24px; 700);
   }
 
-  .page-header__link:hover,
-  .page-header__link:focus {
-    opacity: 0.7;
-  }
-
-  .page-header__link:active {
-    opacity: 0.4;
-  }
-
   .page-header__link--basket {
     .font (17px; 24px; 700);
   }
@@ -108,11 +172,13 @@
     display: block;
     border-bottom: none;
     padding: 5px 20px 49px 20px;
+    margin: 0;
   }
 
   .page-header__site-list--order1 {
+    border: none;
     order: 3;
-    padding-right: 43px;
+    padding-right: 25px;
     padding-left: 0;
   }
 
@@ -124,17 +190,15 @@
 
   .page-header__site-list--order3 {
     order: 1;
-    margin-left: 150px;
     height: 17px;
     width: 17px;
     margin-top: -22px;
-    padding: 35px 31px;
+    padding: 35px 32px;
     border-left: 1px solid @grey;
     border-right: 1px solid @grey;
-    position: relative;
   }
 
-  .page-header__link--hidden:not(:focus):not(:active),
+  .page-header__link-hidden:not(:focus):not(:active),
   input[type="checkbox"].visually-hidden,
   input[type="radio"].visually-hidden {
     position: absolute;
@@ -149,28 +213,18 @@
   }
 
   .page-header__search {
-    opacity: 0.3;
-
-    &:hover,
-    &:focus {
-      fill: @green;
-      opacity: 1;
-    }
+    position: static;
   }
 
   .page-header__cart {
-    padding-left: 0;
-    padding-right: 20px;
-    opacity: 0.3;
-
-    &:hover,
-    &:focus {
-      fill: @green;
-      opacity: 1;
-    }
+    left: 0;
+    top: 12px;
   }
 
   .page-header__site-list--order4 {
+    padding-top: 10px;
+    padding-bottom: 44px;
+    padding-left: 50px;
     padding-right: 0;
     order: 2;
   }
@@ -211,6 +265,7 @@
   }
 
   .page-header__logo {
+    width: auto;
     padding-right: 80px;
     padding-left: 0;
     padding-top: 8px;
@@ -233,14 +288,16 @@
 
   .page-header__site-list--order1 {
     padding-top: 30px;
-    padding-right: 75px;
+    padding-right: 35px;
     order: 0;
+    border-right: 2px solid @grey;
   }
 
   .page-header__site-list--order2 {
     order: 0;
     padding-top: 30px;
     padding-right: 60px;
+    padding-left: 18px;
   }
 
   .page-header__site-list--order3 {
@@ -270,6 +327,17 @@
 
   .page-header__site-list--order7 {
     order: 8;
+  }
+
+  .page-header__search {
+    position: absolute;
+    top: 35px;
+    left: 33px;
+  }
+
+  .page-header__cart {
+    left: 15px;
+    top: 33px;
   }
 
   .page-header__link--tablet {

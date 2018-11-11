@@ -5,6 +5,7 @@
 
 .full-name__block {
   padding-top: 21px;
+  position: relative;
 }
 
 .full-name__title {
@@ -16,6 +17,13 @@
   padding: 15px 0;
   border-bottom: 2px solid black;
   width: 100%;
+  position: relative;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-bottom: 2px solid @green;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -47,5 +55,17 @@
 @media (min-width: @desktop-width) {
   .full-name {
     margin-right: 175px;
+    margin-bottom: 3px;
+  }
+
+  .full-name__block {
+    display: flex;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 39px;
+  }
+
+  .full-name__name {
+    padding: 0 0 14px 15px;
   }
 }
