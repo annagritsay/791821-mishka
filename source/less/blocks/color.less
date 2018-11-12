@@ -40,7 +40,9 @@
 }
 
 .color-input-checkbox:checked + label:hover::after,
-.color-input + label:hover::before {
+.color-input + label:hover::before,
+.color-input-checkbox:checked + label:focus::after,
+.color-input + label:focus::before {
   border-color: @green;
 }
 

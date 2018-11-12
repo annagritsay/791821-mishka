@@ -1,10 +1,10 @@
-  var button = document.querySelector(".popular-product__button");
+  var buttonCart = document.querySelector(".catalog-item__cart");
 
   var modal = document.querySelector(".modal-order");
 
   var overlay = document.querySelector(".overlay");
 
-  button.addEventListener("click", function (evt) {
+  buttonCart.addEventListener("click", function (evt) {
     evt.preventDefault();
     modal.classList.add("modal-order__active");
     overlay.classList.add("overlay__active");

@@ -65,16 +65,18 @@
   position: absolute;
   top: 22px;
   right: 27px;
-  opacity: 0.3;
+  opacity: 0.5;
+}
 
-  &:hover,
-  &:focus {
+.catalog-item__cart {
+  &:hover .catalog-item__svg,
+  &:focus .catalog-item__svg {
     opacity: 1;
     fill: @green;
   }
 
-  &:active {
-    opacity: 0.3;
+  &:active .catalog-item__svg {
+    opacity: 0.7;
     fill: @green;
   }
 }

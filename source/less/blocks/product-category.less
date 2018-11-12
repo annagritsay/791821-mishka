@@ -43,18 +43,18 @@
   &:active .product-category__text {
     opacity: 0.5;
   }
-}
 
-.product-category__interior::after {
-  content: "";
-  position: absolute;
-  top: 23px;
-  right: 35px;
-  width: 40px;
-  height: 62px;
-  background-image: url("../img/icon-interior.svg");
-  background-repeat: no-repeat;
-  opacity: 0.7;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 23px;
+    right: 35px;
+    width: 40px;
+    height: 62px;
+    background-image: url("../img/icon-interior.svg");
+    background-repeat: no-repeat;
+    opacity: 0.7;
+  }
 }
 
 .product-category__text {
@@ -83,18 +83,18 @@
   &:active .product-category__text {
     opacity: 0.5;
   }
-}
 
-.product-category__toys::after {
-  content: "";
-  position: absolute;
-  top: 20px;
-  right: 25px;
-  width: 60px;
-  height: 60px;
-  background-image: url("../img/icon-toy.svg");
-  background-repeat: no-repeat;
-  opacity: 0.7;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/icon-toy.svg");
+    background-repeat: no-repeat;
+    opacity: 0.7;
+  }
 }
 
 .product-category__toys:hover::after,
@@ -146,18 +146,21 @@
     padding-left: 50px;
   }
 
-  .product-category__interior,
+  .product-category__interior {
+    min-height: 120px;
+
+    &::after {
+      top: 30px;
+    }
+  }
+
   .product-category__toys {
     min-height: 120px;
-  }
 
-  .product-category__interior::after {
-    top: 30px;
-  }
-
-  .product-category__toys::after {
-    top: 30px;
-    right: 35px;
+    &::after {
+      top: 30px;
+      right: 35px;
+    }
   }
 
   .product-category__title {
