@@ -1,16 +1,61 @@
+.production-process {
+  &:hover,
+  &:focus {
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.1);
+  }
+}
+
 .production-process__wrapper {
-  width: 260px;
+  width: 262px;
   box-sizing: border-box;
   border: 1px solid @grey;
   margin-bottom: 60px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 77px;
+    left: 80px;
+    top: 132px;
+    background-image: url("../img/icon-play.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.production-process__wrapper:hover::before,
+.production-process__wrapper:focus::before {
+  transform: scale(1.2);
+}
+
+.production-process__wrapper:active::before {
+  transform: scale(0.8);
+  opacity: 0.5;
 }
 
 .production-process__title {
   .stylenone();
   .font (17px; 24px; 700);
-  padding-top: 20px;
+  padding-top: 25px;
   padding-left: 90px;
   margin-bottom: 25px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 33px;
+    bottom: 10px;
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .production-process__text {
@@ -32,14 +77,20 @@
 
 @media (min-width: @tablet-width) {
   .production-process {
-    width: auto;
     margin-bottom: 65px;
+    width: 668px;
+    box-sizing: border-box;
   }
 
   .production-process__wrapper {
     border: none;
     display: flex;
     flex-direction: column;
+
+    &::before {
+      left: 282px;
+      top: 190px;
+    }
   }
 
   .production-process__title {
@@ -53,6 +104,11 @@
     border-top: 1px solid @grey;
     border-right: 1px solid @grey;
     border-left: 1px solid @grey;
+
+    &::before {
+      left: 40px;
+      bottom: 10px;
+    }
   }
 
   .production-process__container {
@@ -65,7 +121,7 @@
 
   .production-process__text {
     .font (15px; 30px; 400);
-    padding: 15px 40px 35px 38px;
+    padding: 15px 40px 37px 38px;
   }
 
   .production-process__button {
@@ -73,21 +129,47 @@
     box-sizing: border-box;
     margin-left: 42px;
     margin-right: 42px;
-    margin-bottom: 46px;
+    margin-bottom: 44px;
   }
 
-  .production-process__img {
+  .production-process__img-conteiner {
     display: block;
     order: -1;
     width: 668px;
+    height: 455px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .production-process {
     position: relative;
-    padding-left: 680px;
     margin-bottom: 105px;
+    width: 368px;
+    padding-left: 680px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 77px;
+      left: 290px;
+      top: 190px;
+      background-image: url("../img/icon-play.svg");
+      background-repeat: no-repeat;
+      z-index: 2;
+    }
+  }
+
+  .production-process__wrapper {
+    display: block;
+    width: auto;
+    border: none;
+    margin: none;
+    position: static;
+
+    &::before {
+      display: none;
+    }
   }
 
   .production-process__title {
@@ -97,7 +179,12 @@
     padding-top: 95px;
     padding-left: 80px;
     padding-right: 80px;
-    padding-bottom: 35px;
+    padding-bottom: 34px;
+
+    &::before {
+      left: 80px;
+      top: 40px;
+    }
   }
 
   .production-process__container {
@@ -123,7 +210,7 @@
     margin-bottom: 60px;
   }
 
-  .production-process__img {
+  .production-process__img-conteiner {
     position: absolute;
     top: 0;
     left: 0;
