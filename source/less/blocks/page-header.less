@@ -81,17 +81,6 @@
   top: 27px;
   left: 30px;
   opacity: 0.3;
-
-  &:hover,
-  &:focus {
-    fill: @green;
-    opacity: 1;
-  }
-
-  &:active {
-    fill: @green;
-    opacity: 0.3;
-  }
 }
 
 .page-header__link {
@@ -109,6 +98,20 @@
   &--desktop,
   &--tablet {
     display: none;
+  }
+
+  &--search:hover .page-header__search,
+  &--basket:hover .page-header__cart,
+  &--search:focus .page-header__search,
+  &--basket:focus .page-header__cart {
+    fill: @green;
+    opacity: 1;
+  }
+
+  &--search:active .page-header__search,
+  &--basket:active .page-header__cart {
+    fill: @green;
+    opacity: 0.3;
   }
 }
 
@@ -270,10 +273,14 @@
   .page-header__link {
     .font (17px; 24px; 700);
 
-    &--desktop,
-    &--tablet {
+    &--desktop {
       display: block;
       .font (15px; 24px; 700);
+    }
+
+    &--tablet {
+      display: block;
+      .font (15px; 24px; 400);
     }
   }
 

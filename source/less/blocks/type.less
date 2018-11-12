@@ -46,7 +46,9 @@
   }
 
   &:checked + label:hover::after,
-  & + label:hover::before {
+  & + label:hover::before,
+  &:checked + label:focus::after,
+  & + label:focus::before {
     border-color: @green;
   }
 
