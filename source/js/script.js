@@ -6,12 +6,12 @@
 
   button.addEventListener("click", function (evt) {
     evt.preventDefault();
-    modal.classList.add("modal-order-active");
-    overlay.classList.add("overlay-active");
+    modal.classList.add("modal-order__active");
+    overlay.classList.add("overlay__active");
   });
 
   overlay.addEventListener("click", function (evt) {
     evt.preventDefault();
-    modal.classList.remove("modal-order-active");
-    overlay.classList.remove("overlay-active");
+    modal.classList.remove("modal-order__active");
+    overlay.classList.remove("overlay__active");
   });
